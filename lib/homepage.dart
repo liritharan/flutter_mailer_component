@@ -79,8 +79,8 @@ print(_googleSignIn.currentUser?.email);
                                     element.transStatus.toString());
 
                                 ScaffoldMessenger.of(context).showSnackBar(
-                                  SnackBar(
-                                    content: Text('Message sent: ' + sendReport.toString()),
+                                  const SnackBar(
+                                    content: Text('Mail Sent'),
                                   ),
                                 );
                               } on MailerException catch (e) {
